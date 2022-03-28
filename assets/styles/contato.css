@@ -1,0 +1,108 @@
+.screen-reader-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+main .container {
+  padding: 0;
+  display: block;
+  width: auto;
+}
+
+form {
+  background: url(../images/contato.png) center right no-repeat;
+  height: 440px;
+  margin: 82px 166px 99px 139px;
+  width: 79%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+fieldset {
+  border: none;
+  width: 43%;
+}
+
+fieldset legend {
+  font-weight: 700;
+  font-size: 40px;
+  color: #FF4081;
+  padding: 0 0 45px 0;
+}
+
+fieldset>button {
+  align-self: flex-start;
+  background: #FF4081;
+  border-radius: 50px;
+  border: none;
+  height: 32px;
+  width: 108px;
+}
+
+fieldset>button>span {
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+  text-transform: lowercase;
+
+  color: #FFFFFF;
+}
+
+fieldset input,
+textarea {
+  border: 1px solid #686868;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin: 0 0 15px 0;
+  width: 100%;
+  min-height: 32px;
+
+  flex-grow: 0;
+  text-align: justify;
+
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: 0 22px;
+
+  color: #58555D;
+}
+
+
+textarea::placeholder {
+  height: 53px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  padding-top: 15.2px;
+}
+
+/* iPad mini */
+@media only screen and (max-width: 1024px) {
+  form {
+    background: none;
+    justify-content: center;
+    margin: 0;
+    width: auto;
+    padding: 100px 0;
+  }
+}
+
+/* celulares comuns */
+@media only screen and (max-width: 481px) {
+
+  form {
+    padding: 70px 0;
+  }
+
+  fieldset {
+    width: 80%;
+  }
+}
