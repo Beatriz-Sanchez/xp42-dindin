@@ -50,7 +50,6 @@ main section p {
 
 .post {
   width: 518px;
-  margin-right: 40px;
 }
 
 .titulo_post {
@@ -123,11 +122,11 @@ main section p {
   }
   .resumo_post {
     font-size: 15px;
-    width: auto;
+    width: 90%;
   }
   main section p {
     font-size: 17px;
-    width: auto;
+    width: 90%;
   }
   .imagem_post{
     width: 300px
