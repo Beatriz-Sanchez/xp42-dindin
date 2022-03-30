@@ -1,15 +1,15 @@
 main .container {
   flex-direction: column;
   width: auto;
-  padding: 125px 128px 63px 128px;
+  padding: 125px 128px 0 128px;
 }
 
 .inicio {
   width: 100%;
   box-sizing: border-box;
-  padding:0 78px 0 78px;
+  padding: 0 78px 0 78px;
   height: 511px;
-  background: url(../images/ilustra-banner.png) 527px 0 no-repeat;
+  background: url(../images/ilustra-banner.png) 550px 0 no-repeat;
   background-size: 501px 511px;
   margin-bottom: 66px;
 }
@@ -21,7 +21,7 @@ main .container {
   color: #FF4081;
   width: 488px;
   height: 216px;
-  margin:0 0 19px 0;
+  margin: 0 0 19px 0;
 }
 
 .inicio>span {
@@ -59,15 +59,18 @@ main .container {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: 730px;
+  height: auto;
   box-sizing: content-box;
   padding: 0px 128px 0px 128px;
+  flex-wrap: wrap;
 }
 
 .curso {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 315px;
+  margin-top: 109px;
 }
 
 .curso h2 {
@@ -76,6 +79,7 @@ main .container {
   text-align: center;
   color: #FF4081;
   max-width: 344px;
+  margin: 0 0 23px;
 }
 
 .curso p {
@@ -85,6 +89,7 @@ main .container {
   text-align: center;
   color: #000000;
   max-width: 293px;
+  margin: 0 0 26px;
 }
 
 .curso a {
@@ -106,17 +111,39 @@ main .container {
   display: block;
 }
 
+#investimento {
+  background: url(../images/investimento.png) center top no-repeat;
+  background-size: 288px 270px;
+}
+
+#poupando {
+  background: url(../images/poupando.png) center top no-repeat;
+  background-size: 238px 270px;
+}
+
+#independencia {
+  background: url(../images/independencia.png) center top no-repeat;
+  background-size: 187px 270px;
+}
+
+.depoimentos {
+  padding: 119px 0 115px 0;
+}
+
 .depoimentos h2 {
   font-weight: 700;
   font-size: 37px;
   line-height: 50px;
   color: #009688;
+  margin: 0 0 78px;
 }
 
 .bloco_depoimentos {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 86px;
+  margin-right: 97px;
 }
 
 .depoimento {
@@ -126,6 +153,7 @@ main .container {
 .depoimento img {
   width: 104px;
   height: 104px;
+  margin-right: 28px;
 }
 
 .citando {
@@ -141,26 +169,46 @@ blockquote {
   width: 363px;
   color: #000000;
   display: block;
+  margin: 0 0 10px;
 }
 
 cite {
+  font-style: normal;
   display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.blog {
+  width: 100%;
+  background: #F7F7F7;
+  height: auto;
+  box-sizing: content-box;
+  padding: 0px 128px 0 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .blog h2 {
   font-weight: 700;
   font-size: 37px;
   color: #009688;
-}
-
-.blog {
-  width: 100%;
+  margin: 91px 0 73px;
 }
 
 .posts {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 101px;
+  flex-wrap: wrap;
+}
+
+.imagem_post {
+  margin-bottom: 10px;
 }
 
 .titulo_post {
@@ -169,6 +217,7 @@ cite {
   line-height: 31px;
   color: #009688;
   max-width: 319px;
+  margin: 0;
 }
 
 .resumo_post {
@@ -179,4 +228,196 @@ cite {
   max-width: 319px;
   color: #000000;
   display: block;
+  margin: 0;
+}
+
+.blog a {
+  display: block;
+  margin: 0 auto 53px;
+  border: 2px solid #FF4081;
+  box-sizing: border-box;
+  border-radius: 62px;
+  width: 289px;
+  height: 51px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.blog a span {
+  color: #FF4081;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+
+}
+
+/* iPad mini */
+@media only screen and (max-width: 1300px) {
+  .cursos {
+    justify-content: center;
+  }
+
+  .posts {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .inicio {
+    background-image: none;
+  }
+
+  .post {
+    margin-bottom: 40px;
+  }
+
+}
+
+/* celulares comuns */
+@media only screen and (max-width: 638px) {
+
+  main .container {
+    flex-direction: column;
+    width: auto;
+    padding: 50px 0 0;
+    align-items: center;
+  }
+
+  /* *início */
+  .inicio {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .inicio h1 {
+    font-size: 40px;
+    line-height: 49px;
+    width: auto;
+    height: auto;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .inicio>span {
+    font-size: 20px;
+    line-height: 28px;
+    width: auto;
+    height: auto;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  .inicio>a>span {
+    font-size: 20px;
+  }
+  
+  .inicio>a {
+    width: 240px;
+    height: 41px;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 50px;
+  }
+
+  /** cursos */
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .curso {
+    margin-top: 50px;
+  }
+  
+  .curso h2 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #FF4081;
+    max-width: 344px;
+    margin: 0 0 23px;
+  }
+
+  .curso a {
+    margin-bottom: 30px;
+  }
+  
+  /* * depoimentos */
+  .depoimentos {
+    padding: 50px 20px 50px;
+    width: auto;
+  }
+  
+  .depoimentos h2 {
+    font-size: 25px;
+    line-height: 48px;
+    margin: 0 0 78px;
+  }
+  
+  .bloco_depoimentos {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 86px;
+    margin-right: 0;
+  }
+  
+  .depoimento {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .depoimento img {
+    margin-bottom: 28px;
+  }
+  
+  blockquote {
+    width: 300px;
+    text-align: center;
+  }
+  
+  cite {
+    text-align: center;
+  }
+
+  /* * blog */
+  .blog {
+    width: auto;
+    padding: 0 20px;
+  }
+  
+  .blog h2 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #009688;
+    margin: 80px 0 53px;
+    text-align: center;
+  }
+  
+  .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .blog a {
+    width: 240px;
+    padding: 10px 0;
+  }
+  
+  .blog a span {
+    font-size: 20px;
+  }
+  
 }
