@@ -231,7 +231,7 @@ cite {
   margin: 0;
 }
 
-.blog a {
+.blog>a {
   display: block;
   margin: 0 auto 53px;
   border: 2px solid #FF4081;
