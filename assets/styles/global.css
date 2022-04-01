@@ -14,7 +14,7 @@ header {
     background: #2E948A;
     display: flex;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0 80px;
     height: 117px;
 }
 
@@ -62,6 +62,7 @@ footer {
     display: flex;
     justify-content: center;
     font-weight: 400;
+    padding-right: 8%;
 }
 
 footer h2 a {
@@ -70,6 +71,7 @@ footer h2 a {
     background: url('../images/logo-footer.png') 0 0 no-repeat;
     width: 312px;
     height: 102px;
+    margin-left: 30%;
 }
 
 footer ul {
@@ -79,6 +81,7 @@ footer ul {
 
 footer ul li {
     list-style: none;
+    margin-bottom: 8px;
 }
 
 footer a {
@@ -92,13 +95,16 @@ footer a {
 footer nav a {
     line-height: 23px;
 }
+.links-anexos {
+    width: 290px;
+}
 
 .links-anexos a {
     border: 2px solid white;
     border-radius: 62px;
     padding: 14px 51px;
     display: block;
-    margin: 0 0 14px;
+    margin-top:14px;
     text-align: center;
 }
 
@@ -112,16 +118,24 @@ footer nav a {
 }
 
 /* iPad mini */
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1000px) {
 
     .container {
         width: 720px;
     }
 
+    footer {
+        padding: 0;
+    }
+    
+    footer h2 a {
+        margin: 0;
+    }
+
 }
 
 /* celulares comuns */
-@media only screen and (max-width: 638px) {
+@media only screen and (max-width: 718px) {
 
     .container {
         width: 460px;
