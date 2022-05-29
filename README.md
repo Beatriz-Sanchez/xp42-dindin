@@ -1,8 +1,10 @@
 <div>
-  <img alt="Front-end" src="https://img.shields.io/static/v1?label=Web Development&message=Front-end&color=gray&labelColor=crimson">
+  <img alt="Front-end" src="https://img.shields.io/static/v1?label=Web Development&message=Front-end&color=gray&labelColor=seagreen">
 </div>
 
-# Din din - site fictício de educação fincnaceira ![DinDin Logo](https://raw.githubusercontent.com/Beatriz-Sanchez/xp42-dindin/main/assets/images/favicon.ico "Logo Dindin")
+# Din din - site fictício de educação fincnaceira 
+
+![DinDin Logo](https://raw.githubusercontent.com/Beatriz-Sanchez/xp42-dindin/main/assets/images/logo%20verde.png "Logo Dindin")
 
 Desenvolvido durante o Gama Experience #42, como forma de praticarmos conceitos básicos de desenvolvimento Front-end, como semântica e responsividade.
 
