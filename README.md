@@ -2,7 +2,7 @@
   <img alt="Front-end" src="https://img.shields.io/static/v1?label=Web Development&message=Front-end&color=gray&labelColor=seagreen">
 </div>
 
-# Din din - site fictício de educação fincnaceira 
+# Din din - site fictício de educação financeira 
 
 ![DinDin Logo](https://raw.githubusercontent.com/Beatriz-Sanchez/xp42-dindin/main/assets/images/logo%20verde.png "Logo Dindin")
 
